@@ -1,0 +1,120 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: radial-gradient(circle, #333333, #111111);
+    color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+.header {
+    position: sticky;
+    top: 0;
+    background: #222;
+    color: #00ffcc;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+}
+
+/* Introductory Paragraph Styling */
+.intro {
+    font-size: 1.4rem;
+    margin: 20px;
+    text-align: center;
+    line-height: 1.7;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 550px;
+    color: #00ffcc;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Button Grid Styling */
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 400px;
+    margin: 30px auto;
+}
+
+/* Button Styling */
+button {
+    padding: 18px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #0077ff, #0033aa);
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #0099ff, #0044cc);
+    transform: scale(1.1);
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.6);
+}
+
+button:active {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Logs Section Styling */
+.logs {
+    margin-top: 25px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: left;
+    max-width: 550px;
+    width: 90%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    color: #00ffcc;
+    overflow-y: auto;
+    max-height: 270px;
+}
+
+.logs h3 {
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+.log-entry {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    padding: 12px;
+    background: rgba(0, 255, 204, 0.1);
+    border: 1px solid #00ffcc;
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .button-grid {
+        grid-template-columns: 1fr;
+    }
+
+    button {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+}

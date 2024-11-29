@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raspbot Control</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <div class="header">Car Control Panel</div>
+    <p class="intro">
+		<br><b> This is the first part of the final project </b></br> 
+		<br> In our first part in our project, we bulid on the Raspberry Pi a car named Raspbot. 
+		<br> we create a flask application that know to control his basic novement via the 6 button : </br>
+		Use the buttons below to control the Raspbot. <br> Logs will update dynamically as commands are executed.
+    </p>
+
+    <div class="button-grid">
+        <button onclick="window.location.href='/forward';">⬆ Forward</button>
+        <button onclick="window.location.href='/backward';">⬇ Backward</button>
+        <button onclick="window.location.href='/left';">⬅ Left</button>
+        <button onclick="window.location.href='/right';">➡ Right</button>
+        <button onclick="window.location.href='/round';">spin</button>
+	    <button onclick="window.location.href='/speed';"> speed</button>
+    </div>
+
+    </div>
+    <h2>
+	    <button onclick="window.location.href='/colors';">colors</button>
+    </h2>
+    <h2>
+        <form action="/show-data" method="get">
+        <button type="submit"> Logs</button>
+        </form>
+    </h2>
+</body>
+</html>
